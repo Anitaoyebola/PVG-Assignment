@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
-[DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
 public class SceneSwitcher : MonoBehaviour
 {
     public void MainMenu()
@@ -42,10 +41,6 @@ public class SceneSwitcher : MonoBehaviour
     {
         Debug.Log("QUIT");
         Application.Quit();
-    }
-    private string GetDebuggerDisplay()
-    {
-        return ToString();
     }
 
 }
